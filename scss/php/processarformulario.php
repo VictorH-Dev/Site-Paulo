@@ -2,7 +2,7 @@
 $servername = "localhost:3306";
 $username = "root";
 $password = "123";
-$dbname = "agenda";
+$dbname = "consultas";
 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -38,4 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
   
   $conn->close();
+
+  ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
