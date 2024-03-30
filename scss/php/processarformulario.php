@@ -2,7 +2,7 @@
 $servername = "localhost:3306";
 $username = "root";
 $password = "123";
-$dbname = "consultas";
+$dbname = "agenda"; // Nome do banco de dados corrigido
 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servico = $_POST['servico'];
     $doutor = $_POST['doutor'];
     $mensagem = $_POST['mensagem'];
-    $data = $_POST['data'];
+    $data = $_POST['data']; // Certifique-se de que esses campos existam no seu formulário
     $hora = $_POST['hora'];
   
     // preparar e executar a consulta SQL
-    $sql = "INSERT INTO Consultas (nome, telefone, servico, doutor, mensagem) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO Consultas (nome, telefone, servico, doutor, mensagem, data, hora) VALUES (?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssss", $nome, $telefone, $servico, $doutor, $mensagem);
+    $stmt->bind_param("sssssss", $nome, $telefone, $servico, $doutor, $mensagem, $data, $hora);
     
     if ($stmt->execute()) {
       echo "Novo registro criado com sucesso";
@@ -35,11 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     $stmt->close();
-  }
+}
   
-  $conn->close();
-
-  ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+$conn->close();
 ?>
