@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "123";
 $dbname = "agenda"; // Nome do banco de dados corrigido
 
 // Criar conexão
