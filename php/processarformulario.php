@@ -11,13 +11,21 @@ if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);
 }
 
+// Função para limpar os dados do usuário
+function limpar_dado($dado) {
+  $dado = trim($dado);
+  $dado = stripslashes($dado);
+  $dado = htmlspecialchars($dado);
+  return $dado;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // coletar valores do formulário
-    $nome = $_POST['nome'];
-    $telefone = $_POST['telefone'];
-    $servico = $_POST['servico'];
-    $doutor = $_POST['doutor'];
-    $data = $_POST['data']; // Certifique-se de que esses campos existam no seu formulário
+    // coletar valores do formulário e limpar os dados
+    $nome = limpar_dado($_POST['nome']);
+    $telefone = limpar_dado($_POST['telefone']);
+    $servico = limpar_dado($_POST['servico']);
+    $doutor = limpar_dado($_POST['doutor']);
+    $data = limpar_dado($_POST['data']); // Certifique-se de que esses campos existam no seu formulário
   
     // preparar e executar a consulta SQL
     $sql = "INSERT INTO Consultas (nome, telefone, servico, doutor, data) VALUES (?, ?, ?, ?, ?)";
