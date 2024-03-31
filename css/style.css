@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.2.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8116,7 +8111,7 @@ h1, h2, h3, h4, h5,
       color: #fff; }
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
         visibility: visible;
-        background-color: #6c5ce7;
+        background-color: #0CC0DF;
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
@@ -8548,7 +8543,7 @@ h1, h2, h3, h4, h5,
   background: #f8f9fd !important; }
 
 .bg-secondary {
-  background: #6c5ce7 !important; }
+  background: #0CC0DF !important; }
 
 .bg-primary {
   background: #01d28e !important; }
@@ -8598,20 +8593,20 @@ h1, h2, h3, h4, h5,
         background: #fff;
         color: #000000; }
   .btn.btn-secondary {
-    background: #6c5ce7;
-    border: 1px solid #6c5ce7;
+    background: #0CC0DF;
+    border: 1px solid #0CC0DF;
     color: #fff; }
     .btn.btn-secondary:hover {
-      border: 1px solid #6c5ce7;
+      border: 1px solid #0CC0DF;
       background: transparent;
-      color: #6c5ce7; }
+      color: #0CC0DF; }
     .btn.btn-secondary.btn-outline-secondary {
-      border: 1px solid #6c5ce7;
+      border: 1px solid #0CC0DF;
       background: transparent;
-      color: #6c5ce7; }
+      color: #0CC0DF; }
       .btn.btn-secondary.btn-outline-secondary:hover {
         border: 1px solid transparent;
-        background: #6c5ce7;
+        background: #0CC0DF;
         color: #fff; }
 
 .img-video {
@@ -8714,7 +8709,7 @@ h1, h2, h3, h4, h5,
       right: 5px;
       content: '';
       height: 5px;
-      background: #6c5ce7;
+      background: #0CC0DF;
       border-radius: 0 0 3px 3px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
@@ -8723,7 +8718,7 @@ h1, h2, h3, h4, h5,
       transition: all 0.3s ease; }
     .services .icon span {
       font-size: 40px;
-      color: #6c5ce7; }
+      color: #0CC0DF; }
   .services .media-body h3 {
     font-weight: 700;
     font-size: 18px;
@@ -8735,8 +8730,8 @@ h1, h2, h3, h4, h5,
     color: #000000;
     border-bottom: 2px solid #e6e6e6; }
     .services .btn-custom:hover {
-      color: #6c5ce7;
-      border-color: #6c5ce7; }
+      color: #0CC0DF;
+      border-color: #0CC0DF; }
 
 #section-counter {
   position: relative;
@@ -8849,7 +8844,7 @@ h1, h2, h3, h4, h5,
         color: #fff;
         width: 30px;
         height: 30px;
-        background: #6c5ce7;
+        background: #0CC0DF;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -8963,7 +8958,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #6c5ce7;
+    background: #0CC0DF;
     opacity: 0;
     z-index: 0;
     -moz-transition: all 0.3s ease;
@@ -9104,11 +9099,11 @@ textarea.form-control {
     .block-7 .price sup {
       font-size: 16px;
       top: -1em;
-      color: #6c5ce7; }
+      color: #0CC0DF; }
     .block-7 .price .number {
       font-size: 34px;
       font-weight: 500;
-      color: #6c5ce7; }
+      color: #0CC0DF; }
   .block-7 .excerpt {
     color: #000000;
     text-transform: uppercase;
@@ -9332,9 +9327,9 @@ textarea.form-control {
       .testimony-section .owl-dots .owl-dot:after {
         border-color: rgba(255, 255, 255, 0.2); }
       .testimony-section .owl-dots .owl-dot.active {
-        background: #6c5ce7; }
+        background: #0CC0DF; }
         .testimony-section .owl-dots .owl-dot.active:after {
-          border-color: #6c5ce7; }
+          border-color: #0CC0DF; }
 
 .testimony-wrap {
   display: block;
@@ -9427,7 +9422,7 @@ textarea.form-control {
         color: #b3b3b3; }
       .blog-entry .text .desc span:last-child {
         font-weight: 500;
-        color: #6c5ce7; }
+        color: #0CC0DF; }
   .blog-entry .text .heading {
     font-size: 18px;
     margin-bottom: 16px;
