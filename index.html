@@ -120,7 +120,7 @@
 	    </div>
 	  </div>
 
-	  <section action="/scss/php/processarformulario.php" class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
+	  <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
 			<div class="overlay"></div>
     	<div class="container">
     		<div class="row d-md-flex justify-content-center">
@@ -129,7 +129,7 @@
 		    			<div class="col-md-8 bg-primary p-5 heading-section heading-section-white">
 		    				<span class="subheading">Marque uma Consulta</span>
 		    				<h2 class="mb-4">Consultas pagas</h2>
-		    				<form name="appointment" method="post" class="appointment" data-netlify-honeypot="bot-field"> 
+		    				<form action="/scss/php/processarformulario.php" name="appointment" method="post" class="appointment" data-netlify-honeypot="bot-field"> 
 		    					<div class="row justify-content-center">
 										<div class="col-md-6">
 											<div class="form-group">
@@ -192,6 +192,8 @@
 										</div>
 		    					</div>
 			          </form>
+
+					  
 		    			</div>
 		    			<div class="col-md-4 bg-white text-center p-5">
 		    				<div class="desc border-bottom pb-4">
